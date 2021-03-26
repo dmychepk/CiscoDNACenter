@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add your devices to Cisco DNA Center</title>
+    <style>
+    table {
+        width: 100%;
+    }
+    td {
+        text-align: center;
+        vertical-align:top;
+    }
+    </style>
+</head>
+<body>
+<h1>Add your devices to Cisco DNA Center</h1>
+<form action="#" method="post">
+    <table>
+        <tr>
+            <th>Credentials</th>
+            <th>Devices</th>
+        </tr>
+        <tr>
+            <td>
+                <label for="userName">userName:</label><br>
+                <input type="text" id="userName" name="userName"><br>
+
+                <label for="password">password</label><br>
+                <input type="password" id="password" name="password"><br>
+
+                <label for="enablePassword">enablePassword</label><br>
+                <input type="password" id="enablePassword" name="enablePassword"><br><br>
+
+                <label for="cliTransport">cliTransport</label><br>
+                <select name="cliTransport" id="cliTransport">
+                    <option value="ssh">SSH</option>
+                    <option value="telnet">Telnet</option>
+                </select><br>
+
+                <label for="snmpROCommunity">snmpROCommunity</label><br>
+                <input type="text" id="snmpROCommunity" name="snmpROCommunity"><br>
+
+                <label for="snmpRWCommunity">snmpRWCommunity</label><br>
+                <input type="text" id="snmpRWCommunity" name="snmpRWCommunity"><br>
+
+                <input type="submit" value="Submit">
+            </td>
+            <td>
+                <textarea name="devices"></textarea>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
