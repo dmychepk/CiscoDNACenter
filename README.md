@@ -14,3 +14,11 @@ Provide credentials for devices
 Provide list of devices, one device per row in format:
 `hostname1,IP address1`
 `hostname2,IP address2`
+
+# DNA Center PnP
+
+Enter DNA Center username, password and url into dnac_credentials.py
+
+Run template.py to generate CSV file with input parameters based on chosen day0 template.
+
+Run pnp.py to perform PnP add+claim proccess based on your modified pnp_params.csv file
