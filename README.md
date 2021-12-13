@@ -22,3 +22,9 @@ Enter DNA Center username, password and url into dnac_credentials.py
 Run template.py to generate CSV file with input parameters based on chosen day0 template.
 
 Run pnp.py to perform PnP add+claim proccess based on your modified pnp_params.csv file
+
+
+# Get Port assignment for user device in SDA Fabric
+
+
+
