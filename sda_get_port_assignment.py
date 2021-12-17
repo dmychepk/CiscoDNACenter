@@ -56,7 +56,7 @@ def get_device_assignment(device, fname):
     authenticate()
     intfs = []
 
-    for j in range(0, len(device.device_type.split(','))):
+    for j in range(0, len(device.serial.split(','))):
         j += 1
 
         if device.device_type == 'Cisco Catalyst 9300 Switch':
@@ -108,9 +108,10 @@ if __name__ == '__main__':
     devices = []
     wb = load_workbook('Switch Inventory.xlsx')
     ws = wb.active
-    for row in ws.iter_rows(min_row=10, max_col=7, max_row=57, values_only=True):
+    for row in ws.iter_rows(min_row=9, max_col=7, max_row=250, values_only=True):
         # (hostname, device_type, ip, serial)
-        devices.append(Device(row[2], row[1], row[4], row[3]))
+        if row[1]:
+            devices.append(Device(row[2], row[1], row[4], row[3]))
 
     count = 0
 
